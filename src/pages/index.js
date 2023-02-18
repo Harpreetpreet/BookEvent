@@ -3,6 +3,7 @@ import AboutEvent from '../Components/home/AboutEvent';
 import HomeHero from '../Components/home/HomeHero';
 import Layout from '../Components/global/Layout';
 import TeamMembers from '../Components/home/TeamMembers';
+import EventProgram from '../Components/home/EventProgram';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeHero />
       <AboutEvent />
       <TeamMembers />
+      <EventProgram />
     </Layout>
   );
 }
