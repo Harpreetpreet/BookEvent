@@ -4,6 +4,7 @@ import HomeHero from '../Components/home/HomeHero';
 import Layout from '../Components/global/Layout';
 import TeamMembers from '../Components/home/TeamMembers';
 import EventProgram from '../Components/home/EventProgram';
+import Subscribe from '../Components/home/Subscribe';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutEvent />
       <TeamMembers />
       <EventProgram />
+      <Subscribe />
     </Layout>
   );
 }
