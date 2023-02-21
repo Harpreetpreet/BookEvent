@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { IoTicketSharp } from 'react-icons/io5';
+import { AiOutlineMenuFold } from 'react-icons/ai';
+import { RxCross2 } from 'react-icons/rx';
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   return (
@@ -25,7 +28,11 @@ const Navbar = () => {
         <div className="md:hidden text-white text-right mr-5">
           <button onClick={() => setActive(!active)}>
             {' '}
-            {active ? 'HIDE' : 'SHOW'}
+            {active ? (
+              <RxCross2 className="h-6 w-6" />
+            ) : (
+              <AiOutlineMenuFold className="h-6 w-6" />
+            )}
           </button>
         </div>
         <div className="md:block hidden">

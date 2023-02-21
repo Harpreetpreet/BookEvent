@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import ComponentHeading from '../global/ComponentHeading';
+import CountUp from 'react-countup';
+import Subtitle from '../atom/Subtitle';
+import Title from '../atom/Title';
 
 const data = [
   {
@@ -34,10 +36,8 @@ const AboutEvent = () => {
     <div className="container mx-auto py-10 md:px-16 px-8 relative">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 ">
         <div className="relative">
-          <ComponentHeading
-            title="About the Event"
-            subtitle="How it All Started"
-          />
+          <Title hasTextBrand title="About the Event" />
+          <Subtitle subtitle="How It All Started" />
           <p className="pt-4">
             We are rethoric question ran over her cheek When she reached the
             first hills of the Italic Mountains, she had a last view back on the
@@ -82,7 +82,9 @@ const AboutEvent = () => {
           >
             <Image src={item.img} alt="" height={50} width={70} />
             <div className="md:ml-8 md:pt-0 pt-4">
-              <h1 className="font-bold text-4xl">{item.num}</h1>
+              <h1 className="font-bold text-4xl">
+                <CountUp end={item.num} duration={3} />
+              </h1>
               <h3 className="font-medium text-xl text-gray-800">
                 {item.title}
               </h3>

@@ -13,7 +13,7 @@ export default function Home() {
       <AboutEvent />
       <TeamMembers />
       <EventProgram />
-      <Subscribe />
+      {/* <Subscribe /> */}
     </Layout>
   );
 }

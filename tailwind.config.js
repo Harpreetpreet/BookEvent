@@ -13,6 +13,7 @@ module.exports = {
       colors: ({ theme }) => ({
         brand: '#ff0763',
         primary: '#292251',
+        secondary: '#1d1d25',
       }),
     },
   },

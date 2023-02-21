@@ -1,5 +1,8 @@
 import React from 'react';
+import Subtitle from '../atom/Subtitle';
 import Card from '../element/Card';
+
+import Title from './../atom/Title';
 
 const cardData = [
   {
@@ -54,17 +57,20 @@ const cardData = [
 
 const TeamMembers = () => {
   return (
-    <div className="bg-gradient-to-r from-pink-500  via-pink-400 to-indigo-400 mt-10 py-28">
+    <div className=" bg-gradient-to-r from-pink-500  via-pink-400 to-indigo-400 mt-10 py-28">
       <div className="container mx-auto max-w-6xl">
-        <h1>hello</h1>
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-8 ">
+        <div className="text-center pb-16">
+          <Title title="Revolutionizing the World" />
+          <Subtitle hasTextWhite subtitle="Visionary Speakers" />
+        </div>
+        <div className="relative grid md:grid-cols-4 grid-cols-1 gap-8">
           {cardData.map((item) => (
             <div key={item.id}>
               <Card
                 img={item.img}
                 title={item.title}
                 description={item.description}
-              />
+              />{' '}
             </div>
           ))}
         </div>
