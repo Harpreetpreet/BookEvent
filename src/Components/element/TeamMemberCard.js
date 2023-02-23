@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 import IconGroup from './IconGroup';
 
-const Card = (props) => {
+const TeamMemberCard = (props) => {
   return (
-    <div className="group">
-      <div className="container transition hover:-translate-y-4  duration-700bg-white">
+    <div className="group ">
+      <div className="container transition hover:-translate-y-4  duration-700 bg-white">
         <div className="relative">
           <a href="#!">
             <Image
@@ -16,7 +16,7 @@ const Card = (props) => {
               width={350}
             />
           </a>
-          <div className="md:absolute right-0 left-0 top-0 bottom-0 group-hover:bg-black/60 group-hover:flex flex-col justify-center hidden duration-75">
+          <div className="md:absolute right-0 left-0 top-0 bottom-0 group-hover:bg-black/60 group-hover:flex flex-col justify-center hidden ">
             <IconGroup />
           </div>
         </div>
@@ -31,4 +31,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default TeamMemberCard;

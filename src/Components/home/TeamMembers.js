@@ -1,6 +1,6 @@
 import React from 'react';
 import Subtitle from '../atom/Subtitle';
-import Card from '../element/Card';
+import TeamMemberCard from '../element/TeamMemberCard';
 
 import Title from './../atom/Title';
 
@@ -66,7 +66,7 @@ const TeamMembers = () => {
         <div className="relative grid md:grid-cols-4 grid-cols-1 gap-8">
           {cardData.map((item) => (
             <div key={item.id}>
-              <Card
+              <TeamMemberCard
                 img={item.img}
                 title={item.title}
                 description={item.description}

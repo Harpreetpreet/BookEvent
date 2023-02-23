@@ -5,6 +5,9 @@ import Layout from '../Components/global/Layout';
 import TeamMembers from '../Components/home/TeamMembers';
 import EventProgram from '../Components/home/EventProgram';
 import Subscribe from '../Components/home/Subscribe';
+import EventSponsor from '@/Components/home/EventSponsor';
+import BuyNow from '../Components/home/Pricing';
+import EventBlog from '@/Components/home/EventBlog';
 
 export default function Home() {
   return (
@@ -13,7 +16,10 @@ export default function Home() {
       <AboutEvent />
       <TeamMembers />
       <EventProgram />
-      {/* <Subscribe /> */}
+      <Subscribe />
+      <EventSponsor />
+      <BuyNow />
+      <EventBlog />
     </Layout>
   );
 }
