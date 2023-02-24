@@ -19,7 +19,7 @@ const eventData = {
           heading: '',
           title: 'Registration',
           description: 'Pick up your name badge and goodie bag',
-          image: '',
+          img: '/images/speaker4.jpg',
         },
         {
           id: 2,
@@ -29,7 +29,7 @@ const eventData = {
           title: 'Reinventing Experiences to All',
           description:
             'Throw myself down teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable.',
-          image: '',
+          img: '/images/speaker4.jpg',
         },
         {
           id: 3,
@@ -39,7 +39,7 @@ const eventData = {
           title: 'Human Centered Design',
           description:
             'Minim Austin 3 wolf moon scenester aesthetic, umami odio pariatur bitters. Pop-up occaecat taxidermy street art, tattooed beard literally.',
-          image: '',
+          img: '/images/speaker1.jpg',
         },
         {
           id: 4,
@@ -48,7 +48,6 @@ const eventData = {
           heading: '',
           title: 'Lunch',
           description: 'Five star buffet for everybody.',
-          image: '',
         },
         {
           id: 5,
@@ -58,7 +57,7 @@ const eventData = {
           title: 'A frontier for designers: cultures of creativity',
           description:
             'Plaid fashion axe semiotics skateboard, try-hard food truck aesthetic biodiesel exercitation. Accusamus VHS Wes Anderson Banksy food truck vero.',
-          image: '',
+          img: '/images/speaker1.jpg',
         },
       ],
     },
