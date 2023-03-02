@@ -8,6 +8,8 @@ import Subscribe from '../Components/home/Subscribe';
 import EventSponsor from '@/Components/home/EventSponsor';
 import BuyNow from '../Components/home/Pricing';
 import EventBlog from '@/Components/home/EventBlog';
+import VenueDetail from '@/Components/home/VenueDetail';
+import ContactForm from './../Components/home/ContactForm';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <EventSponsor />
       <BuyNow />
       <EventBlog />
+      <VenueDetail />
+      <ContactForm />
     </Layout>
   );
 }

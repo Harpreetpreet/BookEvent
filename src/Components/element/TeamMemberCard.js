@@ -21,10 +21,10 @@ const TeamMemberCard = (props) => {
           </div>
         </div>
         <div className="p-6 bg-white">
-          <h5 className="text-gray-900 text-xl font-medium mb-2 ">
-            {props.title}
-          </h5>
-          <p className="text-gray-700 text-base mb-4">{props.description}</p>
+          <h5 className=" text-xl font-bold mb-2 text-brand">{props.title}</h5>
+          <p className="text-gray-700  font-medium text-base mb-4">
+            {props.description}
+          </p>
         </div>
       </div>
     </div>
