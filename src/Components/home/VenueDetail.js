@@ -59,7 +59,7 @@ const venueData2 = [
 
 const VenueDetail = () => {
   return (
-    <div className="container mx-auto py-24">
+    <div className="container mx-auto md:py-24">
       <div className="text-center">
         <Title hasTextBrand title="Where to find us" />
         <Subtitle subtitle="Venue and Info" />
