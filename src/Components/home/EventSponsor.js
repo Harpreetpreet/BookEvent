@@ -8,7 +8,7 @@ const EventSponsor = () => {
     <div className="text-center py-16">
       <Title hasTextBrand title="Supporting Our Project" />
       <Subtitle subtitle="Event Sponsors" />
-      <div className="py-10 text-2xl text-bold">
+      <div className="py-10 text-2xl font-semibold text-gray-900">
         <h1>Platinum Sponsors</h1>
         <h1>Silver Sponsors</h1>
         <h1>Creative Partners</h1>

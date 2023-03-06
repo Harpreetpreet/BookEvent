@@ -15,16 +15,15 @@ const eventData = {
         {
           id: 1,
           startTime: '9:30',
-          endTime: '10:00',
+          endTime: '-10:00',
           heading: '',
           title: 'Registration',
           description: 'Pick up your name badge and goodie bag',
-          img: '/images/speaker4.jpg',
         },
         {
           id: 2,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '10:30',
+          endTime: '-11:15AM',
           heading: 'Edward C. Horner',
           title: 'Reinventing Experiences to All',
           description:
@@ -33,8 +32,8 @@ const eventData = {
         },
         {
           id: 3,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '11:15AM',
+          endTime: '-13:15PM',
           heading: 'Summer Cross',
           title: 'Human Centered Design',
           description:
@@ -48,6 +47,7 @@ const eventData = {
           heading: '',
           title: 'Lunch',
           description: 'Five star buffet for everybody.',
+          img: '',
         },
         {
           id: 5,

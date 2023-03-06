@@ -10,16 +10,22 @@ const EventDetail = ({ selectedDay }) => {
       {selectedDay?.programs?.map((item) => (
         <div
           key={item.id}
-          className="flex border border-gray-200 rounded md:mx-40 justify-between"
+          className="flex border border-gray-200 rounded md:mx-40 odd:bg-white even:bg-slate-100"
         >
-          <div className="items-center">
+          <div className="flex p-8 -mt-2 text-xs font-bold">
             {item.startTime}
             {item.endTime}
           </div>
-          <div className="flex">
-            <Image src={item.img} alt="" height={100} width={100} />
+          <div className=" p-8 ">
+            <Image
+              className="border rounded-lg "
+              src={item.img}
+              alt=""
+              height={100}
+              width={100}
+            />
           </div>
-          <div>
+          <div className="p-8 -mt-4 px-14">
             <div className=" text-brand font-bold">{item.heading}</div>
             <div className="text-xl font-bold">{item.title}</div>
             <div>{item.description}</div>

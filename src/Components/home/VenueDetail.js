@@ -59,12 +59,12 @@ const venueData2 = [
 
 const VenueDetail = () => {
   return (
-    <div className="container mx-auto py-28">
+    <div className="container mx-auto py-24">
       <div className="text-center">
         <Title hasTextBrand title="Where to find us" />
         <Subtitle subtitle="Venue and Info" />
       </div>
-      <div className="grid grid-cols-2 gap-3 mt-16 px-16">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-16 md:px-16 px-12">
         <div>
           <div className="">
             <h1 className="text-2xl font-bold mb-4">Venue Details</h1>
@@ -92,7 +92,7 @@ const VenueDetail = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 mt-16">
+      <div className="grid md:grid-cols-3 grid-cols-1 mt-16">
         {venueData2.map((item2) => (
           <div key={item2.id} className="mx-auto text-center px-6 ">
             <div className="mx-auto items-center mb-6">{item2.icon}</div>

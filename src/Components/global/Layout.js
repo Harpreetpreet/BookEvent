@@ -7,7 +7,7 @@ const Layout = ({ children, hideNavbar }) => {
     <div>
       {!hideNavbar && <Navbar />}
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
