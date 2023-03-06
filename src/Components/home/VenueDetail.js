@@ -56,14 +56,14 @@ const venueData2 = [
 
 const VenueDetail = () => {
   return (
-    <div className="container mx-auto md:py-24 bg-transparent">
+    <div className="container mx-auto md:py-24 py-16 bg-transparent">
       <div className="text-center">
         <Title hasTextBrand title="Where to find us" />
         <Subtitle subtitle="Venue and Info" />
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-16 md:px-16 px-12">
-        <div>
-          <div className="">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-3 mt-16 ">
+        <div className="md:px-16 px-12">
+          <div>
             <h1 className="text-2xl font-bold mb-4">Venue Details</h1>
             <p className="text-gray-700">
               This year Eventor is happening at the brand new Jurys Inn Brighton
@@ -84,7 +84,7 @@ const VenueDetail = () => {
             </div>
           ))}
         </div>
-        <div>
+        <div className="mx-auto">
           <Image src="/images/venue-img.jpg" alt="" height={550} width={600} />
         </div>
       </div>
