@@ -27,8 +27,8 @@ const EventDetail = ({ selectedDay }) => {
           </div>
           <div className="p-8 -mt-4 px-14">
             <div className=" text-brand font-bold">{item.heading}</div>
-            <div className="text-xl font-bold">{item.title}</div>
-            <div>{item.description}</div>
+            <div className="text-xl font-bold pb-2">{item.title}</div>
+            <div className="text-gray-700">{item.description}</div>
           </div>
         </div>
       ))}
