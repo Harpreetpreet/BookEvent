@@ -5,9 +5,6 @@ import Subtitle from './../atom/Subtitle';
 import { IoLocationOutline } from 'react-icons/io5';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
-import { MdAirplanemodeActive } from 'react-icons/md';
-import { RiHotelFill } from 'react-icons/ri';
-import { FaHamburger } from 'react-icons/fa';
 import ReactMarkdown from 'react-markdown';
 
 const venueData = [
@@ -34,14 +31,14 @@ const venueData = [
 const venueData2 = [
   {
     id: '1',
-    icon: <MdAirplanemodeActive className="h-20 w-20 mx-auto" />,
+    img: '/images/transport.png',
     title: 'Transport',
     description: `Tofu mixtape twee, assumenda quinoa **flexitarian** aesthetic artisan vinyl pug. Chambray et Carles cardigan actually.`,
     readMore: 'Read More>',
   },
   {
     id: '2',
-    icon: <RiHotelFill className="h-20 w-20 mx-auto" />,
+    img: '/images/hotel.png',
     title: 'Hotels',
     description:
       'Rethoric question, assumenda quinoa **percianto** aesthetic artisan vinyl pug. Chambray et Thundercats **Grand Hotel** actually.',
@@ -49,7 +46,7 @@ const venueData2 = [
   },
   {
     id: '3',
-    icon: <FaHamburger className="h-20 w-20 mx-auto" />,
+    img: '/images/food.png',
     title: 'Food',
     description:
       'Incididunt ut labore quinoa **cardigan** aesthetic artisan vinyl pug. Chambray et Carles Thundercats **Buffet** assumenda.',
@@ -78,7 +75,7 @@ const VenueDetail = () => {
           {venueData.map((item) => (
             <div key={item.id} className="flex items-center space-y-4 ">
               {' '}
-              <div className="flex text-brand  ">{item.icon}</div>
+              <div className="flex text-brand ">{item.icon}</div>
               <div className="ml-6">
                 {' '}
                 <div className="font-bold text-lg"> {item.title}</div>
@@ -94,8 +91,10 @@ const VenueDetail = () => {
 
       <div className="grid md:grid-cols-3 grid-cols-1 mt-16">
         {venueData2.map((item2) => (
-          <div key={item2.id} className="mx-auto text-center px-6 ">
-            <div className="mx-auto items-center mb-6">{item2.icon}</div>
+          <div key={item2.id} className="mx-auto text-center px-6 py-8">
+            <div className="mx-auto flex justify-center mb-6">
+              <Image src={item2.img} alt="" height={70} width={70} />
+            </div>
             <h1 className="text-3xl font-bold"> {item2.title}</h1>
             <div className="text-gray-700 p-4 prose  prose-strong:text-brand hover:prose-strong:text-black duration-500 ease prose-strong:cursor-pointer">
               <ReactMarkdown>{item2.description}</ReactMarkdown>
