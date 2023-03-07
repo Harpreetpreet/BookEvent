@@ -19,7 +19,7 @@ const Navbar = () => {
             width={150}
           />
           <Image
-            className="cursor-pointer md:hidden block"
+            className="cursor-pointer md:hidden block pl-4"
             src="/images/Logo.png"
             alt=""
             height={80}
