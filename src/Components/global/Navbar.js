@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { IoTicketSharp } from 'react-icons/io5';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { RxCross2 } from 'react-icons/rx';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -37,31 +38,52 @@ const Navbar = () => {
         </div>
         <div className="md:block hidden">
           <ul className="flex cursor-pointer justify-center space-x-3 font-semibold text-white">
-            <li className=" text-brand hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+            <Link
+              href=""
+              className=" text-brand hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
+            >
               HOME
-            </li>
-            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out p-2 text-sm px-4">
+            </Link>
+            <Link
+              href="about"
+              className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out p-2 text-sm px-4"
+            >
               ABOUT
-            </li>
-            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+            </Link>
+            <Link
+              href=""
+              className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
+            >
               SPEAKERS
-            </li>
-            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+            </Link>
+            <Link
+              href=""
+              className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
+            >
               SCHEDULE
-            </li>
-            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+            </Link>
+            <Link
+              href=""
+              className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
+            >
               BLOG
-            </li>
-            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+            </Link>
+            <Link
+              href=""
+              className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
+            >
               CONTACT
-            </li>
-            <li className="flex hover:bg-brand hover:text-white bg-primary  rounded duration-500 ease-in-out  p-2 text-sm px-4 items-center ">
+            </Link>
+            <Link
+              href=""
+              className="flex hover:bg-brand hover:text-white bg-primary  rounded duration-500 ease-in-out  p-2 text-sm px-4 items-center "
+            >
               <IoTicketSharp
                 className="mr-1
               "
               />
               TICKETS
-            </li>
+            </Link>
           </ul>
         </div>
       </nav>

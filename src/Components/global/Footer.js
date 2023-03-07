@@ -8,7 +8,7 @@ import { TfiYoutube } from 'react-icons/tfi';
 const Footer = () => {
   return (
     <div className=" bg-[#101015] py-14  mx-auto ">
-      <div className="container  space-y-10 flex flex-col items-center ">
+      <div className="container mx-auto space-y-10 flex flex-col items-center ">
         <div className="">
           <ul className="flex text-white space-x-8 ">
             <li>Home</li>

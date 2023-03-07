@@ -19,6 +19,7 @@ const eventData = {
           heading: '',
           title: 'Registration',
           description: 'Pick up your name badge and goodie bag',
+          img: '',
         },
         {
           id: 2,

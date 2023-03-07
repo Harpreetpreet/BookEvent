@@ -3,6 +3,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 import Subtitle from '../atom/Subtitle';
 import Title from '../atom/Title';
+import { AiOutlinePlayCircle } from 'react-icons/ai';
 
 const data = [
   {
@@ -72,6 +73,9 @@ const AboutEvent = () => {
             height={600}
             width={600}
           />
+          <div>
+            <AiOutlinePlayCircle className="h-24 w-24 text-white relative inset-0 m-auto" />
+          </div>
         </div>
       </div>
       <div className=" grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-10 mt-8 ">

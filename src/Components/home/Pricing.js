@@ -13,19 +13,28 @@ const Pricing = () => {
             package="Early Bird"
             price="$219"
             person="/person"
-            option="Get Access to all Sessions"
+            option1="Get Access to all Sessions"
+            option2="Unlimited Coffee and Foods"
+            option3="Meet with Favorite Speakers"
+            option4="Access to all Audio and Video Files"
           />
           <PricingCard
             package="Regular"
-            price="$219"
+            price="$310"
             person="/person"
-            option="Get Access to all Sessions"
+            option1="Get Access to all Sessions"
+            option2="Unlimited Coffee and Foods"
+            option3="Meet with Favorite Speakers"
+            option4="Access to all Audio and Video Files"
           />
           <PricingCard
             package="Last Chance"
-            price="$219"
+            price="$379"
             person="/person"
-            option="Get Access to all Sessions"
+            option1="Get Access to all Sessions"
+            option2="Unlimited Coffee and Foods"
+            option3="Meet with Favorite Speakers"
+            option4="Access to all Audio and Video Files"
           />
         </div>
       </div>
