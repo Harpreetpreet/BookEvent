@@ -29,12 +29,12 @@ const chooseData = [
 
 const WhyChooses = () => {
   return (
-    <div className="container mx-auto py-28 md:px-12 px-8">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+    <div className="container mx-auto py-28 md:px-20 px-8">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         <div className="space-y-2">
           <Title hasTextBrand title="Who Should Attend" />
           <Subtitle subtitle="What to Expect from BookIt" />
-          <div className="space-y-4 text-gray-700 pt-4">
+          <div className="space-y-4 text-gray-800 pt-4">
             <p>
               We are rethoric question ran over her cheek When she reached the
               first hills of the Italic Mountains, she had a last view back on
@@ -57,21 +57,21 @@ const WhyChooses = () => {
         </div>
         <div>
           {chooseData.map((item) => (
-            <div key={item.id} className="flex items-center gap-8">
-              <div>
+            <div key={item.id} className="flex gap-12 items-center space-y-6">
+              <div className="w-2/12">
                 <Image
-                  className="w-11/12"
+                  className=" "
                   src={item.img}
                   alt=""
                   width={70}
                   height={70}
                 />
               </div>{' '}
-              <div className="w-9/12 space-y-2">
-                <h1 className="font-bold text-2xl text-gray-900">
+              <div className="w-11/12 space-y-2">
+                <h1 className="font-bold text-xl text-gray-900">
                   {item.heading}
                 </h1>
-                <p> {item.description}</p>
+                <p className="text-gray-800"> {item.description}</p>
               </div>
             </div>
           ))}

@@ -13,7 +13,7 @@ import ContactForm from './../Components/home/ContactForm';
 
 export default function Home() {
   return (
-    <Layout hideNavbar>
+    <Layout isHome>
       <HomeHero />
       <AboutEvent />
       <TeamMembers />

@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../global/Navbar';
 
 const HomeHero = () => {
   return (
-    <div className="relative bg-[url('/images/bg-main.jpg')] bg-fixed bg-cover bg-no-repeat pb-60">
-      <Navbar />
+
       <div className="z-50 relative md:mt-32 mt-10">
         <div className="z-40">
           <div className="md:max-w-lg max-w-md mx-auto">
@@ -65,7 +63,6 @@ const HomeHero = () => {
         <div className="-z-30 absolute -mt-10 -top-12 left-0 right-0 -bottom-12">
           <div className="h-full w-full max-w-sm mx-auto text-white md:border-[18px] border-0 border-primary"></div>
         </div>
-      </div>
     </div>
   );
 };
