@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="container mx-auto py-6 ">
       <nav className="flex items-center justify-between ">
         <div className="flex justify-start ">
-        
+
             {' '}
             <Image
               className="cursor-pointer md:block hidden"
@@ -20,7 +20,7 @@ const Navbar = () => {
               height={150}
               width={150}
             />
-          
+
           <Image
             className="cursor-pointer md:hidden block pl-4"
             src="/images/Logo.png"
@@ -72,7 +72,7 @@ const Navbar = () => {
               BLOG
             </Link>
             <Link
-              href=""
+              href="contact"
               className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
             >
               CONTACT
