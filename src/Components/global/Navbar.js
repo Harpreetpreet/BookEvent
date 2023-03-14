@@ -39,7 +39,7 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <div className="md:block hidden">
+        <div className="md:block hidden ">
           <ul className="flex cursor-pointer justify-center space-x-3 font-semibold text-white">
             <Link
               href=""
