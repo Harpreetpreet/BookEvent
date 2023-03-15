@@ -1,9 +1,14 @@
-import React, { Children } from 'react';
+import React from 'react';
 import HomeHero from '../home/HomeHero';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
-const Layout = ({ children, pageTitle, isHome }) => {
+const Layout = ({
+  children,
+  pageTitle,
+  isHome,
+  bgImage = '/images/banner1.jpg',
+}) => {
   return (
     <div>
       {isHome && (
@@ -14,7 +19,8 @@ const Layout = ({ children, pageTitle, isHome }) => {
       )}
       {!isHome && (
         <div
-          className={`bg-[url('/images/banner1.jpg')] bg-no-repeat bg-cover mx-auto `}
+          style={{ backgroundImage: `url(${bgImage}` }}
+          className=" bg-no-repeat bg-cover mx-auto "
         >
           <Navbar />
           <div className="text-center py-14 pb-32">
