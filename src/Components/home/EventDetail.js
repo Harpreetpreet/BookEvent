@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import dayjs from 'dayjs';
-
+import AOS from 'aos';
+AOS.init();
 const EventDetail = ({ selectedDay }) => {
   return (
     <div className="space-y-3">
@@ -11,6 +12,7 @@ const EventDetail = ({ selectedDay }) => {
       </div>
       {selectedDay?.programs?.map((item) => (
         <div
+          data-aos="fade-right"
           key={item.id}
           className="md:flex gap-4 py-5 px-8 border border-gray-200 rounded md:mx-40 odd:bg-white even:bg-slate-100"
         >

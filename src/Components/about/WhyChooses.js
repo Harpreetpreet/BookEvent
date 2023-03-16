@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import Subtitle from '../atom/Subtitle';
 import Title from './../atom/Title';
+import AOS from 'aos';
+AOS.init();
 
 const chooseData = [
   {
@@ -31,7 +33,7 @@ const WhyChooses = () => {
   return (
     <div className="container mx-auto py-28 md:px-20 px-8">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-        <div className="space-y-2">
+        <div data-aos="fade-right" className="space-y-2">
           <Title hasTextBrand title="Who Should Attend" />
           <Subtitle subtitle="What to Expect from BookIt" />
           <div className="space-y-4 text-gray-800 pt-4">
@@ -55,7 +57,7 @@ const WhyChooses = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left">
           {chooseData.map((item) => (
             <div key={item.id} className="flex gap-12 items-center space-y-6">
               <div className="w-2/12">

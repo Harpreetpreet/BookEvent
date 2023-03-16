@@ -4,7 +4,9 @@ import CountUp from 'react-countup';
 import Subtitle from '../atom/Subtitle';
 import Title from '../atom/Title';
 import { AiOutlinePlayCircle } from 'react-icons/ai';
+import AOS from 'aos';
 
+AOS.init();
 const data = [
   {
     id: 1,
@@ -36,7 +38,7 @@ const AboutEvent = () => {
   return (
     <div className="container mx-auto py-10 md:px-16 px-8 relative">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 ">
-        <div className="relative">
+        <div className="relative" data-aos="fade-right">
           <Title hasTextBrand title="About the Event" />
           <Subtitle subtitle="How It All Started" />
           <p className="pt-4">
@@ -65,7 +67,7 @@ const AboutEvent = () => {
             KNOW MORE
           </button>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <Image
             className="md:absolute -top-20"
             src="/images/intro-video.jpg"
@@ -78,7 +80,10 @@ const AboutEvent = () => {
           </div>
         </div>
       </div>
-      <div className=" grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-10 mt-8 ">
+      <div
+        data-aos="fade-up"
+        className=" grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-10 mt-8 "
+      >
         {data.map((item) => (
           <div
             key={item.id}

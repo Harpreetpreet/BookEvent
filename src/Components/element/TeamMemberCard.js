@@ -16,7 +16,7 @@ const TeamMemberCard = (props) => {
               width={350}
             />
           </a>
-          <div className="md:absolute right-0 left-0 top-0 bottom-0 group-hover:bg-black/60 group-hover:flex flex-col justify-center hidden ">
+          <div className="md:absolute right-0 left-0 top-0 bottom-0 md:group-hover:bg-black/60 md:group-hover:flex flex-col justify-center hidden ">
             <IconGroup />
           </div>
         </div>

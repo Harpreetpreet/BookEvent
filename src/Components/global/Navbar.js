@@ -7,12 +7,13 @@ import Link from 'next/link';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
-  return (
-    <div className="container mx-auto py-6 ">
-      <nav className="flex items-center justify-between ">
-        <div className="flex justify-start ">
 
-            {' '}
+  return (
+    <div className="container mx-auto py-6">
+      <nav className="flex items-center justify-between  ">
+        <div className="flex justify-start ">
+          {' '}
+          <Link href="/">
             <Image
               className="cursor-pointer md:block hidden"
               src="/images/Logo.png"
@@ -20,7 +21,7 @@ const Navbar = () => {
               height={150}
               width={150}
             />
-
+          </Link>
           <Image
             className="cursor-pointer md:hidden block pl-4"
             src="/images/Logo.png"
@@ -40,9 +41,9 @@ const Navbar = () => {
           </button>
         </div>
         <div className="md:block hidden ">
-          <ul className="flex cursor-pointer justify-center space-x-3 font-semibold text-white">
+          <ul className="flex cursor-pointer justify-center space-x-3 font-semibold text-white ">
             <Link
-              href=""
+              href="/"
               className=" text-brand hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4"
             >
               HOME
@@ -78,7 +79,7 @@ const Navbar = () => {
               CONTACT
             </Link>
             <Link
-              href=""
+              href="/ticket"
               className="flex hover:bg-brand hover:text-white bg-primary  rounded duration-500 ease-in-out  p-2 text-sm px-4 items-center "
             >
               <IoTicketSharp

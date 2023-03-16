@@ -84,7 +84,7 @@ const SpeakersDetail = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className="md:flex even:flex-row-reverse gap-10 my-12 border-b-2 pb-6"
+          className="md:flex even:flex-row-reverse gap-10 my-12 border-b-2 pb-6 "
         >
           <div className="rounded border md:w-4/12">
             <div>
@@ -102,7 +102,10 @@ const SpeakersDetail = () => {
                 </h2>
                 <h3>{item?.speaker?.position || ''}</h3>
                 {item.speaker?.profileLink && (
-                  <a className="text-brand hover:text-black" href={item.speaker?.profileLink}>
+                  <a
+                    className="text-brand hover:text-black"
+                    href={item.speaker?.profileLink}
+                  >
                     {item.speaker?.profileLink}
                   </a>
                 )}

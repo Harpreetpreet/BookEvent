@@ -3,6 +3,8 @@ import Title from '../atom/Title';
 import Subtitle from '../atom/Subtitle';
 import Button from '../atom/Button';
 import Image from 'next/image';
+import AOS from 'aos';
+AOS.init();
 
 const data = [
   {
@@ -43,10 +45,10 @@ const EventSponsor = () => {
       <Subtitle subtitle="Event Sponsors" />
       <div className="py-10 text-2xl font-semibold text-gray-900">
         {data.map((item) => (
-          <div key={item.id}>
+          <div data-aos="fade-up" key={item.id}>
             <div>
               <h1>{item.sponsorBy}</h1>
-              <div className=" md:flex justify-around  md:py-14 py-10 container mx-auto ">
+              <div className=" md:flex justify-around md:py-14 py-10 container mx-auto ">
                 {item.images.map((img, index) => (
                   <Image
                     className="cursor-pointer "

@@ -8,9 +8,9 @@ import { TfiYoutube } from 'react-icons/tfi';
 const Footer = () => {
   return (
     <div className=" bg-[#101015] py-14  mx-auto ">
-      <div className="container mx-auto space-y-10 flex flex-col items-center ">
+      <div className="container mx-auto space-y-10 flex flex-col items-center px-12">
         <div className="">
-          <ul className="flex text-white space-x-8 ">
+          <ul className="flex flex-wrap justify-center text-white gap-8 ">
             <li>Home</li>
             <li>Blog</li>
             <li>Tickets</li>
@@ -23,7 +23,7 @@ const Footer = () => {
           <Image src="/images/Logo.png" alt="" height={200} width={200} />
         </div>
         <div className="">
-          <ul className="flex space-x-8">
+          <ul className="flex  flex-wrap justify-around  gap-8">
             {' '}
             <li className="relative group">
               {' '}
