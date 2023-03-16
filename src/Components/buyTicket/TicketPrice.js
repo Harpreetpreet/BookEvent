@@ -5,8 +5,8 @@ import Pricing from '../home/Pricing';
 
 const TicketPrice = () => {
   return (
-    <div>
-      <div className="text-center">
+    <div className="py-28">
+      <div className="text-center pb-12">
         <Title hasTextBrand title="Join us for the full conference" />
         <Subtitle subtitle="Tickets on Sale Now!" />
       </div>
