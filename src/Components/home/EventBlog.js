@@ -2,6 +2,9 @@ import React from 'react';
 import Subtitle from '../atom/Subtitle';
 import Title from '../atom/Title';
 import EventBlogCard from '../element/EventBlogCard';
+import AOS from 'aos';
+
+AOS.init();
 
 const EventBlog = () => {
   return (
@@ -12,19 +15,34 @@ const EventBlog = () => {
           <Subtitle subtitle="Event Blog" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <EventBlogCard
-            img="/images/blog1.jpg"
-            title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
-          />
-          <EventBlogCard
-            img="/images/blog2.jpg"
-            title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
-          />
-          <EventBlogCard
-            img="/images/blog3.jpg"
-            title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+          <div
+            data-aos="fade-right"
+            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
+          >
+            <EventBlogCard
+              img="/images/blog1.jpg"
+              title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+            />
+          </div>
+          <div
+            data-aos="fade-up"
+            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
+          >
+            <EventBlogCard
+              img="/images/blog2.jpg"
+              title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+            />
+          </div>
+          <div
+            data-aos="fade-left"
+            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
+          >
+            <EventBlogCard
+              img="/images/blog3.jpg"
+              title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+            />
+          </div>
         </div>
       </div>
     </div>

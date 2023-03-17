@@ -48,10 +48,10 @@ const EventSponsor = () => {
           <div data-aos="fade-up" key={item.id}>
             <div>
               <h1>{item.sponsorBy}</h1>
-              <div className=" md:flex justify-around md:py-14 py-10 container mx-auto ">
+              <div className=" md:flex md:justify-around  md:py-14 py-10 container mx-auto ">
                 {item.images.map((img, index) => (
                   <Image
-                    className="cursor-pointer "
+                    className="cursor-pointer"
                     key={index + 1}
                     src={img}
                     alt=""

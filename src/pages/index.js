@@ -7,7 +7,7 @@ import TeamMembers from '../Components/home/TeamMembers';
 import Subscribe from '../Components/home/Subscribe';
 // import EventSponsor from '@/Components/home/EventSponsor';
 import Pricing from '@/Components/home/Pricing';
-import EventBlog from '@/Components/home/EventBlog';
+// import EventBlog from '@/Components/home/EventBlog';
 import VenueDetail from '@/Components/home/VenueDetail';
 import ContactForm from './../Components/home/ContactForm';
 import dynamic from 'next/dynamic';
@@ -21,6 +21,9 @@ const AboutEvent = dynamic(() => import('../Components/home/AboutEvent'), {
 const EventSponsor = dynamic(() => import('../Components/home/EventSponsor'), {
   ssr: false,
 });
+const EventBlog = dynamic(() => import('../Components/home/EventBlog'), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -30,7 +33,7 @@ export default function Home() {
       <EventProgram />
       <Subscribe />
       <EventSponsor />
-      <Pricing isBackgroundAvailable/>
+      <Pricing isBackgroundAvailable />
       <EventBlog />
       <VenueDetail />
       <ContactForm />
