@@ -7,7 +7,7 @@ import { IoTicketSharp } from 'react-icons/io5';
 const PricingCard = ({ item }) => {
   return (
     <div className="container mx-auto px-8">
-      <div className=" p-10 rounded shadow bg-slate-100 hover:bg-gradient-to-r from-pink-600 via-indigo-500 to-purple-500 py-14 duration-500 ease-in-out">
+      <div className=" p-10 rounded shadow-2xl bg-slate-100 hover:bg-gradient-to-r from-pink-600 via-indigo-500 to-purple-500 py-14 duration-500 ease-in-out">
         <h4 className="text-2xl font-bold ">{item.name}</h4>
         <h2 className="text-4xl font-bold py-6">
           ${item.price}

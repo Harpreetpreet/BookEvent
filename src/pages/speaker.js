@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function speaker() {
   return (
-    <Layout pageTitle="Speakers">
+    <Layout pageTitle="Speakers" bgImage="/images/banner4.jpg">
       <SpeakersDetail />
     </Layout>
   );

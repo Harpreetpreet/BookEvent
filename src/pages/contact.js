@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <Layout pageTitle="Contact">
+    <Layout pageTitle="Contact" bgImage="/images/banner2.jpg">
       <Location />
       <ContactUs />
     </Layout>
