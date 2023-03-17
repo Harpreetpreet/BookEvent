@@ -109,9 +109,7 @@ const SpeakersDetail = () => {
                     {item.speaker?.profileLink}
                   </a>
                 )}
-                <p className="dark:text-gray-100">
-                  {item.speaker?.description}
-                </p>
+                <p className="text-gray-100">{item.speaker?.description}</p>
               </div>
             </div>
           </div>
