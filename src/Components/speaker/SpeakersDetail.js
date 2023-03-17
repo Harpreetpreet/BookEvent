@@ -9,7 +9,7 @@ const data = [
       name: 'Edward C. Horner',
       description:
         'He is a DevOpsologist who has spent the last couple of decades helping organisations make better software faster.',
-      image: '/images/Speaker1.jpg',
+      image: '/images/speaker1.jpg',
       position: 'Founder, Textlab',
       profileLink: 'http://www.textlab.com',
     },
@@ -34,7 +34,7 @@ Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
       name: 'Yue Ying Yüan',
       description:
         'He is a DevOpsologist who has spent the last couple of decades helping organisations make better software faster.',
-      image: '/images/Speaker2.jpg',
+      image: '/images/speaker2.jpg',
       position: 'CFO, First Choice Inc.',
       profileLink: 'http://www.buenavista.com',
     },
@@ -58,7 +58,7 @@ Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
       name: 'Avdei Ignatyev',
       description:
         'He is a DevOpsologist who has spent the last couple of decades helping organisations make better software faster.',
-      image: '/images/Speaker4.jpg',
+      image: '/images/speaker4.jpg',
       position: 'Co-Founder, Newhair Corp.',
       profileLink: 'http://www.newhaircorp.com',
     },
