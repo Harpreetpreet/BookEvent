@@ -47,8 +47,8 @@ const AboutEvent = () => {
             skyline of her hometown Bookmarksgrove, the headline of Alphabet
             Village and the subline of her own road, the Line Lane.
           </p>
-          <div className="py-4 border-l-4">
-            <i className=" border-brand pl-4  ">
+          <div className="py-2 border-l-4 border-brand">
+            <i className="  pl-4 ">
               Throw myself down teems with vapour around me, and the meridian
               sun strikes the upper surface of the impenetrable foliage of my
               trees.

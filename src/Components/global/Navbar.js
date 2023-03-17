@@ -93,31 +93,46 @@ const Navbar = () => {
       </nav>
       {active && (
         <ul className="md:hidden mt-3 bg-white/30 py-6 text-center cursor-pointer justify-center space-y-3 font-semibold text-white">
-          <li className=" text-brand hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
-            HOME
-          </li>
-          <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out p-2 text-sm px-4">
-            ABOUT
-          </li>
-          <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
-            SPEAKERS
-          </li>
-          <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
-            SCHEDULE
-          </li>
-          <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
-            BLOG
-          </li>
-          <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
-            CONTACT
-          </li>
-          <li className="flex w-max mx-auto hover:bg-brand hover:text-white bg-primary  rounded duration-500 ease-in-out  p-2 text-sm px-4 items-center ">
-            <IoTicketSharp
-              className="mr-1
+          <Link href="/">
+            {' '}
+            <li className=" text-brand hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+              HOME
+            </li>
+          </Link>
+          <Link href="/about">
+            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out p-2 text-sm px-4">
+              ABOUT
+            </li>
+          </Link>
+          <Link href="/speaker">
+            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+              SPEAKERS
+            </li>
+          </Link>
+          <Link href="/">
+            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+              SCHEDULE
+            </li>
+          </Link>
+          <Link href="/">
+            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+              BLOG
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li className=" hover:bg-brand hover:text-white   rounded duration-500 ease-in-out  p-2 text-sm px-4">
+              CONTACT
+            </li>
+          </Link>
+          <Link href="/ticket">
+            <li className="flex w-max mx-auto hover:bg-brand hover:text-white bg-primary  rounded duration-500 ease-in-out  p-2 text-sm px-4 items-center ">
+              <IoTicketSharp
+                className="mr-1
               "
-            />
-            TICKETS
-          </li>
+              />
+              TICKETS
+            </li>
+          </Link>
         </ul>
       )}
     </div>
