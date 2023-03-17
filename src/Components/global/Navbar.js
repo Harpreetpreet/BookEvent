@@ -22,13 +22,15 @@ const Navbar = () => {
               width={150}
             />
           </Link>
-          <Image
-            className="cursor-pointer md:hidden block pl-4"
-            src="/images/Logo.png"
-            alt=""
-            height={80}
-            width={80}
-          />
+          <Link href="/">
+            <Image
+              className="cursor-pointer md:hidden block pl-4"
+              src="/images/Logo.png"
+              alt=""
+              height={80}
+              width={80}
+            />
+          </Link>
         </div>
         <div className="md:hidden text-white text-right mr-5">
           <button onClick={() => setActive(!active)}>
