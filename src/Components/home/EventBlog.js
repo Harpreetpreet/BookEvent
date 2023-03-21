@@ -16,31 +16,29 @@ const EventBlog = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-          <div
-            data-aos="fade-right"
-            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
-          >
+          <div data-aos="fade-right">
             <EventBlogCard
+              className="relative"
               img="/images/blog1.jpg"
               title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+              date="29"
+              month="Nov"
             />
           </div>
-          <div
-            data-aos="fade-up"
-            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
-          >
+          <div data-aos="fade-up">
             <EventBlogCard
               img="/images/blog2.jpg"
               title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+              date="17"
+              month="Aug"
             />
           </div>
-          <div
-            data-aos="fade-left"
-            className="hover:text-brand cursor-pointer duration-500 ease-in-out "
-          >
+          <div data-aos="fade-left">
             <EventBlogCard
               img="/images/blog3.jpg"
               title="3 Best Practices for Keeping Your Corporate Event Clients Happy"
+              date="18"
+              month="Sep"
             />
           </div>
         </div>

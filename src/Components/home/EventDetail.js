@@ -6,7 +6,7 @@ AOS.init();
 const EventDetail = ({ selectedDay }) => {
   return (
     <div className="space-y-3">
-      <div className="text-center text-brand text-3xl font-bold">
+      <div className="text-center text-brand text-2xl font-bold mb-12">
         {dayjs(selectedDay?.date).format('dddd, D')}th{' '}
         {dayjs(selectedDay?.date).format('MMMM')}
       </div>

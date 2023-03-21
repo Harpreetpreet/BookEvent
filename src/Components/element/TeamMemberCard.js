@@ -7,7 +7,7 @@ const TeamMemberCard = (props) => {
     <div className="group ">
       <div className="container transition hover:-translate-y-4  duration-700 bg-white">
         <div className="relative">
-          <a href="#!">
+          <a href="#">
             <Image
               className="mx-auto"
               src={props.img}

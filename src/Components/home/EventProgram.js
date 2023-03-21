@@ -33,7 +33,7 @@ const eventData = {
         },
         {
           id: 3,
-          startTime: '11:15AM',
+          startTime: '11:15',
           endTime: '-13:15PM',
           heading: 'Summer Cross',
           title: 'Human Centered Design',
@@ -43,8 +43,8 @@ const eventData = {
         },
         {
           id: 4,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '13:30',
+          endTime: '-14:30PM',
           heading: '',
           title: 'Lunch',
           description: 'Five star buffet for everybody.',
@@ -52,8 +52,8 @@ const eventData = {
         },
         {
           id: 5,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '14:35',
+          endTime: '-16:00PM',
           heading: 'Laura Bryant',
           title: 'A frontier for designers: cultures of creativity',
           description:
@@ -70,7 +70,7 @@ const eventData = {
         {
           id: 1,
           startTime: '9:30',
-          endTime: '10:00',
+          endTime: '-11:15AM',
           heading: 'Avdei Ignatyev',
           title: 'Getting Started With User-Centered Content',
           description:
@@ -79,8 +79,8 @@ const eventData = {
         },
         {
           id: 2,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '11:15',
+          endTime: '-13:15PM',
           heading: 'Eden Nivison',
           title: 'Content Measurement and Analytics',
           description:
@@ -89,8 +89,8 @@ const eventData = {
         },
         {
           id: 3,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '13:30',
+          endTime: '-14:30PM',
           heading: '',
           title: 'Lunch',
           description: 'Five star buffet for everybody.',
@@ -98,8 +98,8 @@ const eventData = {
         },
         {
           id: 4,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '14:35',
+          endTime: '-16:00PM',
           heading: 'Davi Azevedo',
           title: 'Not Perfect, Always Better: A Story of Inclusion',
           description:
@@ -116,7 +116,7 @@ const eventData = {
         {
           id: 1,
           startTime: '9:30',
-          endTime: '10:00',
+          endTime: '-11:15AM',
           heading: 'Yue Ying Yüan',
           title: 'How Silos Learn: Working in the Idea Factory',
           description:
@@ -125,8 +125,8 @@ const eventData = {
         },
         {
           id: 2,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '11:15',
+          endTime: '-13:15PM',
           heading: 'Laura Bryant',
           title: 'Empathy Behind the Algorithms',
           description:
@@ -135,8 +135,8 @@ const eventData = {
         },
         {
           id: 3,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '13:30',
+          endTime: '-14:30PM',
           heading: '',
           title: 'Lunch',
           description: 'Five star buffet for everybody.',
@@ -144,8 +144,8 @@ const eventData = {
         },
         {
           id: 4,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '14:35',
+          endTime: '-16:00PM',
           heading: 'Oscar Watkins',
           title: 'Adaptive Content, Context, and Controversy',
           description:
@@ -154,8 +154,8 @@ const eventData = {
         },
         {
           id: 5,
-          startTime: '9:30',
-          endTime: '10:00',
+          startTime: '16:30',
+          endTime: '-Late',
           heading: '',
           title: 'After Party',
           description: 'Stick around and enjoy a dazzling after work.',
