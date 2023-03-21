@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
           </ul>{' '}
         </div>
-        <h1 className="text-gray-100">
+        <h1 className="text-gray-100 text-center">
           Copyright © 2018 BookIt. All Rights Reserved.
         </h1>
       </div>
