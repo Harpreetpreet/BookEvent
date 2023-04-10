@@ -1,19 +1,18 @@
 import Image from 'next/image';
-import React from 'react';
 import IconGroup from './IconGroup';
 
 const TeamMemberCard = (props) => {
   return (
     <div className="group ">
-      <div className="container transition hover:-translate-y-4  duration-700 bg-white">
+      <div className="container transition hover:-translate-y-4  duration-700 md:px-0 px-4">
         <div className="relative">
           <a href="#">
             <Image
-              className="mx-auto"
+              className=" "
               src={props.img}
               alt=""
               height={200}
-              width={350}
+              width={400}
             />
           </a>
           <div className="md:absolute right-0 left-0 top-0 bottom-0 md:group-hover:bg-black/60 md:group-hover:flex flex-col justify-center hidden ">

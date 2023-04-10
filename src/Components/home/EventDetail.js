@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import React from 'react';
-import dayjs from 'dayjs';
 import AOS from 'aos';
+import dayjs from 'dayjs';
+import Image from 'next/image';
 AOS.init();
 const EventDetail = ({ selectedDay }) => {
   return (
@@ -14,13 +13,13 @@ const EventDetail = ({ selectedDay }) => {
         <div
           data-aos="fade-right"
           key={item.id}
-          className="md:flex gap-4 py-5 px-8 border border-gray-200 rounded md:mx-40 odd:bg-white even:bg-slate-100"
+          className="md:flex gap-4 py-5 px-8 border border-gray-200 rounded md:mx-40 mx-6 odd:bg-white even:bg-slate-100"
         >
           <div className="flex text-sm font-bold text-gray-700 md:w-2/12">
             {item.startTime}
             {item.endTime}
           </div>
-          <div className="md:w-1/12">
+          <div className="md:w-1/12 md:py-0 py-3">
             {item.img && (
               <Image
                 className="border rounded-lg "
