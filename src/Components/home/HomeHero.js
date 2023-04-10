@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HomeHero = () => {
   return (
     <div className="z-40 relative md:mt-32 mt-10">
@@ -52,6 +50,7 @@ const HomeHero = () => {
             Jurys Inn Brighton Waterfront Hotel, Brighton, London
           </h3>
           <button
+            onClick={() => alert('You have been successfully registered...')}
             type="button"
             className="p-4 px-8 bg-brand text-white font-medium text-xm leading-tight rounded shadow-md hover:shadow-lg active:bg-pink-600 active:shadow-lg transition duration-150 ease-in-out"
           >
