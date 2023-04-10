@@ -1,9 +1,8 @@
-import React from 'react';
-import Title from '../atom/Title';
-import Subtitle from '../atom/Subtitle';
-import Button from '../atom/Button';
-import Image from 'next/image';
 import AOS from 'aos';
+import Image from 'next/image';
+import Button from '../atom/Button';
+import Subtitle from '../atom/Subtitle';
+import Title from '../atom/Title';
 AOS.init();
 
 const data = [
@@ -50,21 +49,21 @@ const EventSponsor = () => {
               <h1>{item.sponsorBy}</h1>
               <div className=" md:flex md:justify-around  md:py-14 py-10 container mx-auto ">
                 {item.images.map((img, index) => (
-                  <Image
-                    className="cursor-pointer"
-                    key={index + 1}
-                    src={img}
-                    alt=""
-                    width={120}
-                    height={100}
-                  />
+                  <div key={index + 1} className="flex justify-center">
+                    <Image
+                      className="cursor-pointer py-6 items-center "
+                      src={img}
+                      alt=""
+                      width={120}
+                      height={100}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
           </div>
         ))}
       </div>
-
       <Button active> BECOME OUR SPONSOR</Button>
     </div>
   );
